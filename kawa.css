@@ -1,0 +1,188 @@
+
+/* Styl dla ekranów o szerokości 600px lub większej */
+@media screen and (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Styl dla ekranów o szerokości 900px lub większej */
+  @media screen and (min-width: 900px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    position: relative;
+    display: flex;
+    
+}
+
+
+.kawa{
+    height:100vh ;
+    width: 100%;
+  
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%; ;
+    padding-left: 2%;
+
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+    
+
+}
+
+nav ul li a{
+    color: rgb(50, 41, 41);
+    text-decoration: none;
+    font-size:  25px ;
+    font-weight: bold;
+    
+}
+
+nav ul li a:hover{
+    color: rgb(139, 116, 98);
+    transition: .3s;
+}
+
+header{
+    position: relative;
+    width: 94%;
+    margin: 0 auto;
+    padding: 13px 0;
+    top: 40px;
+    left: 30px;
+    right: 30px;
+    border-radius:50px;
+    z-index: 2;
+    background: whitesmoke;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+   
+
+ }
+
+ /*------sekcje-------*/
+
+ #kawa{
+    padding: 5%;
+    height: auto;
+    width: 100%;
+    
+    color: rgb(50, 40, 41);
+    margin-bottom: 0px;
+ }
+
+ 
+ 
+  #gatunek {
+padding: 20%;
+height: auto;
+width: 100%;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-image: url(https://images.unsplash.com/photo-1513530176992-0cf39c4cbed4?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+margin: 0;
+opacity: 0.9;
+  }
+  .gatunek-picture{
+    background-color: whitesmoke;
+    border-radius: 50px;
+    margin: 1px;
+    
+  }
+    p{
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    
+
+    h3{
+        font-weight: 900;
+        text-align: center;
+        font-size: 50px;
+        color: rgb(50, 40, 41);
+     }
+
+/*--- hero block-----*/
+
+
+/*----block---*/
+
+.galleryblock {
+padding: 70px 0;
+border-bottom: 1px solid #e6e6e6;
+
+}
+    
+.galleryblock .row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.galleryblock .col{
+    flex-basis: 33.33%;
+    padding-top: 0 15px 30px;
+
+}
+
+/* gallery block */
+
+.galleryblock .col{
+    height: 370px;
+
+}
+
+
+.galleryblock .col img{
+    object-fit: cover;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.col img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+   margin: auto;
+
+}
+
+.row{
+    align-content: center;
+    float: left;
+    margin:0;
+    border: hidden;
+    align-self: center;
+}
+
+ 
+    
+
+
