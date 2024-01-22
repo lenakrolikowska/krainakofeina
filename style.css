@@ -1,0 +1,263 @@
+
+/* Styl dla ekranów o szerokości 600px lub większej */
+@media screen and (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  /* Styl dla ekranów o szerokości 900px lub większej */
+  @media screen and (min-width: 900px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .gatunek-picture,
+    .heroBlock,
+    .galleryblock img {
+        width: 100%;
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    position: relative;
+   
+}
+
+/*---------Navigation bar ---------*/
+
+
+.hero{
+    height:100vh ;
+    width: 100%;
+    background: #e3dad0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 2%; ;
+    padding-left: 2%;
+
+}
+.logo{
+    color: rgb(50, 40, 41);
+    
+    letter-spacing:1px;
+    cursor: pointer;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 25px;
+
+}
+
+nav ul li a{
+    color: rgb(50, 41, 41);
+    text-decoration: none;
+    font-size: 27px ;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: rgb(139, 116, 98);
+    transition: .3s;
+}
+ button{
+    background-color: rgb(151, 116, 83);
+    padding: 12px 28px;
+    text-decoration: none;
+border: none;
+border-radius: 30px;
+font-size: 25px;
+font-weight: light;
+ }
+ button:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+ }
+ header{
+    position: absolute;
+    width: 94%;
+    margin: 0 auto;
+    padding: 13px 0;
+    top: 40px;
+    left: 30px;
+    right: 30px;
+    border-radius:50px;
+    z-index: 2;
+    background: whitesmoke;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+
+ }
+
+ /*----- Home page -------*/
+
+ .bg{
+    position: absolute;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+ }
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translateY(-50%);
+    
+}
+
+.content h4  {
+    color: rgb(132, 110, 90);
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    
+}
+.content h1{
+    line-height: 180px;
+    font-size: 180px;
+    color: rgb(151, 116, 83);
+    margin: bottom 10px; ;
+}
+h2{
+    font-size: 200px;
+    color: rgb(151, 116, 83);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.btn1{
+    position: absolute;
+    top: 75%;
+    left: 70%;
+}
+.btn1 a{
+    background: rgb(132, 110, 90);
+    color: black;
+    padding: 5px 20px;
+    text-decoration: none;
+    font-weight:light;
+    letter-spacing: 5px;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+.btn1:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+ }
+
+/* ---------O nas section --------*/
+
+#onas{
+background-color: #e3dad0;
+
+text-align: center;
+height:100vh ;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+  
+    /* Określenie pozycji obrazu tła */
+    background-position: center;
+    
+    /* Ustawienie powtarzania obrazu tła */
+    background-repeat: no-repeat;
+justify-content: center;
+
+
+}
+
+.bg2{
+    background-image: url(https://images.unsplash.com/photo-1595434091143-b375ced5fe5c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y29mZmVlJTIwY3VwfGVufDB8fDB8fHww);
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    float: right;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+
+.about{
+  background-color: rgb(151, 116, 83);
+  height: 100%;
+  width: 60%;
+  border-radius: 20px;
+ 
+}
+.about h3{
+    font-size: 200px;
+    color: #e3dad0;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+
+    text-align: left;
+}
+
+.about h5{
+    font-size: 170px;
+    color: #e3dad0;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: right;
+}
+
+.about h4{
+    font-size: 190px;
+    color: #e3dad0;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+ /*----footer------*/
+
+ footer{
+    padding: 13px 0;
+    background-color: rgb(50, 40, 41);
+    color: #e3dad0;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+    bottom: 0;
+    justify-self: end;
+ }

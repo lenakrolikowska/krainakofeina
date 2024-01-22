@@ -13,6 +13,52 @@
       font-size: 20px;
     }
   }
+  @media screen and (max-width: 600px) {
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation li {
+        margin: 10px 0;
+    }
+
+    .gatunek-picture,
+    .heroBlock,
+    .galleryblock img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .s1text, .s1text2, .s1text3, .s1text4, .s2text, .s2text2, .s2text3, .textonly, .ekspresautomatyczny, .ekspreskapsułkowy, .ekspreskolbowy {
+        margin-bottom: 10px;
+    }
+}
+/* Media Query dla urządzeń o szerokości ekranu mniejszej niż 600px */
+@media screen and (max-width: 600px) {
+    .section1 {
+        margin-top: 0; /* Zresetuj margines dla mniejszych ekranów */
+    }
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 
 
@@ -23,13 +69,16 @@ body{
     
 }
 
-/*----- pierwsza sekcja -------*/
+
+/*----- cała sekcja -------*/
 
 #about{
     
     display: flex;
     height: 100vh;
 }
+
+/*---- Divy podział na dwie "sekcje"------*/
 
 .section{
     flex: 1;
@@ -40,52 +89,57 @@ body{
 
 .section1{
 background-image: url("brewingchemex.jpg");
+
 }
 .section2{
     background-image: url("brewingexpress.jpg");
 }
 
+/*----- Tytułowa sekcja --------*/
+
+
 header {
     position: absolute;
-    width: 90%;
-    margin: 0 auto;
-    padding:  0 13px 0  0;
+    width: 94%;
+    height: 90px;
+    padding: 0 5px 0 0;
     top: 40px;
     left: 30px;
     right: 30px;
-    border-radius:50px;
+    border-radius: 50px;
     z-index: 2;
-    background: whitesmoke;
+    background: rgb(151, 116, 83);
     box-shadow: 0 0 30px rgb(0 0 0 / 8%);
     font-size: 35px;
     text-align: center;
     letter-spacing: 3px;
     word-spacing: 2px;
-
-}
-
-nav{
+    color: #e3dad0;
     display: flex;
-    align-items:start;
-    justify-content: space-between;
-    padding-right: 2%; ;
-    padding-left: 2%;
-
+    justify-content: space-between; 
+    align-items: center; 
 }
-nav ul li{
+
+nav ul {
     list-style: none;
-    display: inline-block;
-    padding: 0px  1000px;
-    
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a{
-    color: rgb(50, 41, 41);
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #e3dad0;
     text-decoration: none;
-    font-size:  20px ;
+    font-size: 20px;
     font-weight: bold;
-    float: left;
-    
 }
 
 
@@ -93,7 +147,10 @@ nav ul li a{
 
 
 
-/*-----alternatywy ------*/
+
+
+
+/*----- metody przelewowe ------*/
 
 h3{
     font-weight: 500;
@@ -109,40 +166,135 @@ p{
     display: grid;
     place-items: center;
     place-content: center;
-    
+    margin-top:80px ;
 }
 
 .s1text{
     
      padding: 20px 10px 20px 10px;
-background-color: whitesmoke;
+background-color: rgb(151, 116, 83);
      top: 50%;
      left: 20%;
-   width: 40%;
+   width: 55%;
      border-radius: 20px;
     flex: 1;
-opacity: 0.8;
+opacity: 0.9;
+margin-top: 40px;
 margin-right: 50%;
 margin-left: 50%;
+margin-bottom: 20px;
+text-align: center;
+align-self: center;
+
+}
+
+.s1text2{
+
+    padding: 20px 10px 20px 10px;
+    background-color: rgb(151, 116, 83);
+         top: 50%;
+         left: 20%;
+       width: 55%;
+         border-radius: 20px;
+        flex: 1;
+    opacity: 0.9;
+    margin-right: 50%;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    align-self: center;
+    
+}
+
+.s1text3{
+    padding: 20px 10px 20px 10px;
+background-color: rgb(151, 116, 83);
+     top: 50%;
+     left: 20%;
+   width: 55%;
+     border-radius: 20px;
+    flex: 1;
+opacity: 0.9;
+margin-right: 50%;
+margin-left: 50%;
+margin-bottom: 20px;
+text-align: center;
+align-self: center;
+
+}
+
+.s1text4{
+    padding: 20px 10px 20px 10px;
+background-color: rgb(151, 116, 83);
+     top: 50%;
+     left: 20%;
+   width: 55%;
+     border-radius: 20px;
+    flex: 1;
+opacity: 0.9;
+margin-right: 50%;
+margin-left: 50%;
+text-align: center;
+align-self: center;
+
+}
+
+H3{
+    text-align: center;
+}
+
+
+
+
+
+
+/*----- metody ciśnieniowe------*/
+
+.s2text{
+padding: 20px 10px 20px 10px;
+background-color: rgb(151, 116, 83);
+top: 50%;
+right: 20%;
+width: 50%;
+border-radius: 20px;
+flex: 1;
+opacity: 0.9;
+margin-left: 50%;
+margin-right: 50%;
+margin-bottom: 30px;
+
+}
+
+.s2text2{
+
+    padding: 20px 10px 20px 10px;
+    background-color: rgb(151, 116, 83);
+    top: 50%;
+    right: 20%;
+    width: 50%;
+    border-radius: 20px;
+    flex: 1;
+    opacity: 0.9;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-bottom: 30px;
 
 
 }
 
-/*----- podstawa------*/
 
-.s2text{
-padding: 20px 10px 20px 10px;
-background-color: whitesmoke;
-top: 50%;
-right: 20%;
-width: 40%;
-border-radius: 20px;
-flex: 1;
-opacity: 0.8;
-margin-left: 50%;
-margin-right: 50%;
-
-
+.s2text3{
+    padding: 20px 10px 20px 10px;
+    background-color: rgb(151, 116, 83);
+    top: 50%;
+    right: 20%;
+    width: 50%;
+    border-radius: 20px;
+    flex: 1;
+    opacity: 0.9;
+    margin-left: 50%;
+    margin-right: 50%;
+    
 }
 
 .section2{
@@ -150,4 +302,98 @@ margin-right: 50%;
     place-items: center;
     place-content: center;
     
+}
+
+/*----- sekcja espresów do kawy---------*/
+
+#express{
+
+margin: 0;
+position: absolute;
+
+align-content: center;
+display: flex;
+    height: 100vh;
+   width: auto;
+   background-image: url(https://images.unsplash.com/photo-1461988366670-48e401bafb0a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZmZlJTIwbWFjaGluZXxlbnwwfHwwfHx8MA%3D%3D);
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+
+
+}
+
+.textonly  h2 {
+    background-color: rgb(151, 116, 83);
+    position: absolute;
+    width: 90%;
+    margin: 0 auto;
+    padding:  0 13px 0  0;
+    top: 40px;
+    left: 30px;
+    right: 30px;
+    border-radius:50px;
+    z-index: 2;
+   color: #e3dad0;
+    box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    margin-top: 0;
+
+
+}
+
+.ekspresautomatyczny{
+    background-color: rgb(151, 116, 83);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+height: 60%;
+margin-top: 40px;
+font-size: 29px;
+opacity: 0.8;
+align-self: center;
+
+}
+
+.ekspreskapsułkowy{
+    background-color: rgb(151, 116, 83);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 60%;
+    margin-top: 40px;
+font-size: 29px;
+opacity: 0.8;
+align-self: center;
+}
+
+.ekspreskolbowy{
+    background-color: rgb(151, 116, 83);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 60%;
+    margin-top: 40px;
+    font-size: 29px;
+opacity: 0.8;
+align-self: center;
+
+}
+
+.ekspresautomatyczny .ekspreskapsułkowy .ekspreskolbowy h2 {
+    color: #333;
+}
+
+
+
+
+.ekspresautomatyczny .ekspreskapsułkowy .ekspreskolbowy p {
+    color: #666;
 }
